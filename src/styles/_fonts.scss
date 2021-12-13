@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("../assets/fonts/Avenir-Black.eot") format("eot"),
+        url("../assets/fonts/Avenir-Black.ttf") format("ttf"),
+        url("../assets/fonts/Avenir-Black.woff") format("woff"),
+        url("../assets/fonts/Avenir-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("../assets/fonts/Avenir-semibold.eot") format("eot"),
+        url("../assets/fonts/Avenir-semibold.ttf") format("ttf"),
+        url("../assets/fonts/Avenir-semibold.woff") format("woff"),
+        url("../assets/fonts/Avenir-semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("../assets/fonts/Avenir-medium.eot") format("eot"),
+        url("../assets/fonts/Avenir-medium.ttf") format("ttf"),
+        url("../assets/fonts/Avenir-medium.woff") format("woff"),
+        url("../assets/fonts/Avenir-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("../assets/fonts/Avenir-Regular.eot") format("eot"),
+        url("../assets/fonts/Avenir-Regular.ttf") format("ttf"),
+        url("../assets/fonts/Avenir-Regular.woff") format("woff"),
+        url("../assets/fonts/Avenir-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("../assets/fonts/Avenir-Light.eot") format("eot"),
+        url("../assets/fonts/Avenir-Light.ttf") format("ttf"),
+        url("../assets/fonts/Avenir-Light.woff") format("woff"),
+        url("../assets/fonts/Avenir-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+// ---------------------------------------------------------------------------
+
+h1, h2, h3, span, p{
+    cursor: default;
+}
+
+// ---------------------------------------------------------------------------
+.contact{
+    color: $dark_grey;
+
+    font-family: "Avenir";
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+}

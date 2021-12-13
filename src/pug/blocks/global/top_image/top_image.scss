@@ -1,0 +1,33 @@
+.top-image{
+    width: 100%;
+    background-color: $black;
+
+    font-size: 0px;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 17px;
+        padding-bottom: 9px;
+
+        font-size: 28px;
+    }
+
+    &__img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1700px){
+    .top-image{
+        &__header{
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 1279px){
+    .top-image{
+        display: none;
+    }
+}

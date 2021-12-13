@@ -1,8 +1,9 @@
 const path = require('path');
 const _path = (link) => path.join(__dirname, link);
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const HtmlWEbpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const src = {
@@ -25,6 +26,7 @@ module.exports = {
     
     entry: {
         main: src.scripts+"/main.js",
+        mainpage: src.pages+"/mainpage/mainpage.js",
         
     },
     output: {
@@ -37,7 +39,7 @@ module.exports = {
         port: 3000,
         open: true,
     },
-
+    
     module: {
         rules: [
             {
@@ -58,7 +60,6 @@ module.exports = {
                 use: [
                     "style-loader",
                     "css-loader",
-
                 ],
             },
             {
@@ -108,14 +109,33 @@ module.exports = {
     },
     
     plugins: [
-        new HtmlWEbpackPlugin({
-            template: src.pages + "mainpage/mainpage.pug",
-            filename: "./index.html",
-            title: "TarTar",
-            chunks: ['main', 'components'],
-            minify: !isDev,
-        })
-    ],
+        
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
 
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, "src/assets/img/"), to: "assets/img/" },
+            ],
+        }),
+        new HtmlWebpackPlugin({
+            template: src.pages + '/mainpage/mainpage.pug',
+            filename: './index.html',
+            title: 'TarTar',
+            chunks: ['main', 'mainpage'],
+            minify: !isDev
+
+        }),
+        
+
+    ],
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserPlugin({
+            extractComments: false,
+        })],
+    },
     
 }
