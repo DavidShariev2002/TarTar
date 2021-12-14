@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
 @font-face {
     font-family: "Avenir";
     src: url("../assets/fonts/Avenir-Black.eot") format("eot"),
@@ -44,10 +46,61 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Paris";
+    src: 
+        url("../assets/fonts/ParisPro.woff2") format("woff2"),
+        url("../assets/fonts/ParisPro.eot") format("eot"),
+        url("../assets/fonts/ParisPro.ttf") format("ttf"),
+        url("../assets/fonts/ParisPro.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
 // ---------------------------------------------------------------------------
 
 h1, h2, h3, span, p{
     cursor: default;
+}
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+h1, h2{
+    font-family: "Paris";
+}
+h1{
+    font-family: Paris;
+    font-size: 202px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 202px;
+    letter-spacing: -0.031em;
+
+}
+h2{
+    font-size: 170px;
+    line-height: 170px;
+    letter-spacing: -0.031em;
+}
+h3{
+    font-family: "Avenir";
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: -.06em;
+
+}
+p, span{
+    font-family: Baskerville;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    
+
 }
 
 // ---------------------------------------------------------------------------
@@ -59,4 +112,77 @@ h1, h2, h3, span, p{
     font-weight: 500;
     line-height: 42px;
     letter-spacing: 0.04em;
+}
+
+.menu-1{
+    font-family: "Baskerville";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.055em;
+
+}
+.menu-2{
+    font-family: Baskerville;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+
+}
+
+.text-italic{
+    font-family: Baskerville;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+
+@media screen and (max-width: 1279px){
+
+    h1{
+        font-size: 110px;
+        line-height: 110px;
+        letter-spacing: 0.03em;
+    }
+    h2{
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 0.03em;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    p, span{
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.065em;
+    }
+
+    h1{
+        font-family: Paris;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -0.075em;
+        text-align: left;
+    }
+
+    .text-italic{
+        font-size: 22px;
+        line-height: 24px;
+
+    }
+
+    .menu-1, .menu-2{
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0em;
+
+    }
 }
