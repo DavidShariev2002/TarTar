@@ -59,10 +59,10 @@
 
 // ---------------------------------------------------------------------------
 
-h1, h2, h3, span, p{
+h1, h2, h3, h4, span, p{
     cursor: default;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     margin: 0;
     padding: 0;
 }
@@ -91,8 +91,17 @@ h3{
     letter-spacing: -.06em;
 
 }
+h4{
+    font-family: "Baskerville";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.06em;
+
+}
+
 p, span{
-    font-family: Baskerville;
+    font-family: "Baskerville";
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -140,6 +149,12 @@ p, span{
 
 }
 
+.small-text{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+
+}
 
 @media screen and (max-width: 1279px){
 

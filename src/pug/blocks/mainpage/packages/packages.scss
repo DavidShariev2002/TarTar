@@ -1,0 +1,221 @@
+
+.packages{
+    &__header{
+        position: relative;
+        font-size: 0;
+        line-height: 0;
+
+        &-img{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &-content{
+            width: 400px;
+            position: absolute;
+            bottom: 0;
+            left: 344px;
+            padding: 80px 0 20px;
+            text-align: center;
+
+            background: rgba(244, 244, 244, 0.7);
+
+            
+            h3{
+                font-family: Paris;
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 80px;
+                letter-spacing: -0.035em;
+                color: $white;
+
+            }
+            span{
+                display: block;
+                border-bottom: 2px solid $brown;
+                width: 440px;
+                transform: translateX(-20px);
+                padding-top: 10px;
+
+                color: $dark_grey;
+            }
+            p{
+                padding: 0 30px;
+                margin: 15px 0;
+            }
+            a{
+                display: inline-block;
+                margin-top: 30px;
+            }
+            
+        }
+    }
+
+    &__list{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 230px 20px 190px 20px;
+        overflow: hidden;
+
+        &-items--left{
+            position: relative;
+            width: 30%;
+            z-index: 100;
+        }
+        &-items--right{
+            position: relative;
+            width: 30%;
+            z-index: 100;
+        }
+
+        &-item{
+            margin-bottom: 40px;
+            z-index: 1;
+
+            h3{
+                color: $brown;
+            }
+            p{
+                text-align: left;
+            }
+
+            &--center{
+                position: absolute;
+                left: 48%;
+                top: -60px;
+                transform: translateX(-50%);
+                z-index: 0;
+
+                img{
+                    width: 110%;
+                }
+                
+                span{
+                    position: absolute;
+                    width: 260px;
+                    bottom: 120px;
+                    right: 5vw;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1279px){
+    .packages{
+        &__header{
+            max-height: 799px;
+
+            img{
+                max-height: 800px;
+                object-fit: contain;
+            }
+
+            &-content{
+                width: 440px;
+                left: 50%;
+                bottom: -100px;
+                transform: translateX(-50%);
+
+                span{
+                    transform: translateX(0);
+                }
+                    
+            }
+        }
+
+        &__list{
+            max-width: 600px;
+            margin: 0 auto;
+            padding-bottom: 0;
+
+            &-item{
+                padding: 160px 20px 0 20px;
+            }
+            &-item--center{
+                overflow: hidden;
+                position: relative;
+                left: auto;
+                transform: translateX(0);
+                padding-top: 0;
+
+                img{
+                    width: 140%;
+                    position: relative;
+                    left: -20%;
+                    top: -200px;
+                }
+
+                .tablet{
+                    position: absolute;
+                    width: 50px;
+                    top: 50%;
+                    z-index: 999;
+                }
+                .left{
+                    left: 0;
+                }
+                .right{
+                    left: 90%;
+                }
+
+                span{
+                    bottom: 280px;
+                }
+            }
+
+            
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .packages{
+        &__header{
+
+            &-content{
+                background: rgba(244, 244, 244, 0);
+                bottom: -229px;
+
+                h3{
+                    font-size: 60px;
+                }
+
+                span{
+                    width: auto;
+                    display: inline-block;
+                    transform: translateX(0);
+
+                    font-family: Baskerville;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    letter-spacing: 0.04em;
+
+                }
+            }
+        }
+
+        &__list{
+            &-item--center{
+                img{
+                    top: -100px;
+                }
+
+                span{
+                    bottom: 20vw;
+                }
+            }
+        }
+
+
+    }
+}

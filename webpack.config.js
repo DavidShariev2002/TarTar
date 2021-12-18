@@ -28,6 +28,7 @@ module.exports = {
         main: src.scripts+"/main.js",
         mainpage: src.pages+"/mainpage/mainpage.js",
         
+        
     },
     output: {
         filename: isDev ? 'scripts/[name].js' : 'scripts/[name].[contenthash].js',
@@ -105,6 +106,8 @@ module.exports = {
     resolve: {
         alias: {
             'jquery': _path('node_modules/jquery/dist/jquery'),
+            'slick-carousel': _path('/node_modules/slick-carousel/slick/slick.min.js'),
+            'slick-carouse-styles': _path('/node_modules/slick-carousel/slick/slick-theme.scss'),
         }
     },
     

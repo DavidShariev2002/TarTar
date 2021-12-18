@@ -33,6 +33,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^10.0.0"
+    "copy-webpack-plugin": "^10.0.0",
+    "slick-carousel": "^1.8.1"
   }
 }

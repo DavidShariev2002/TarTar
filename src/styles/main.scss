@@ -22,6 +22,32 @@ a{
     cursor: pointer;
 }
 
+button{
+    padding: 6px 85px;
+    min-width: 120px;
+
+    color: $white;
+    font-family: Avenir;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+
+    background-color: $brown;
+    border: none;
+
+    transition-duration: .4s;
+    cursor: pointer;
+
+    &:hover{
+        color: $black;
+        background-color: $white_grey_2;
+        box-shadow: 1px 1px 45px rgba(0, 0, 0, .5);
+    }
+}
+
 
 // -----------------------------------------------------------------
 .container{
@@ -31,12 +57,24 @@ a{
     padding: 0 20px;
 }
 
+.desktop{
+    display: block;
+}
+.tablet{
+    display: none;
+}
+
 
 
 
 
 @media screen and (max-width: 1279px){
-    
+    .desktop{
+        display: none!important;
+    }
+    .tablet{
+        display: block;
+    }
 }
 
 

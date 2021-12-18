@@ -2,10 +2,6 @@
     position: relative;
     padding: 24px 0 145px;
 
-    .container{
-        
-    }
-
     &__text{
         position: relative;
         margin-bottom: 80px;
@@ -37,7 +33,6 @@
         display: flex;
         justify-content: end;
         align-items: center;
-
 
         z-index: 100;
 
@@ -90,7 +85,6 @@
 
         z-index: 1;
 
-
     }
 }
 
@@ -133,7 +127,7 @@
             width: auto;
             height: 100vh;
             
-            margin-left: 50%;
+            margin-left: 40%;
             transform: translateX(-70vh);
         }  
 
