@@ -1,7 +1,5 @@
 console.log("%c BLOCK PORTFOLIO is onloaded", "color: purple; font-size: 20px;");
 
-import '../../../../../node_modules/slick-carousel/slick/slick.min'
-import '../../../../../node_modules/slick-carousel/slick/slick.css'
 
 let vw = document.documentElement.clientWidth / 100;
 console.log(vw)

@@ -1,0 +1,73 @@
+.stories{ 
+    padding-bottom: 30px;
+
+    &__item{
+
+        h1{
+            font-family: Paris;
+            font-size: 125px;
+            font-weight: 400;
+            line-height: 125px;
+            letter-spacing: -0.045em;
+
+            color: $dark_grey;
+
+        }
+        h3{
+            margin-top: 25px;
+
+            font-size: 41px;
+            font-weight: 500;
+            line-height: 56px;
+            letter-spacing: -0.025em;
+
+            color: $brown;
+        }
+        
+        p{
+            max-width: 1024px;
+            text-align: left;
+        }
+    }
+
+    .slick-dots{
+        display: flex;
+        justify-content: space-between;
+        width: 180px;
+        margin: 0 auto;
+
+        button{
+            font-size: 0;
+            line-height: 0;
+            max-width: 12px;
+            width: 12px;
+            padding: 0 0;
+            height: 12px;
+            min-width: 0px;
+
+            border-radius: 50%;
+        
+        }
+
+        .slick-active button{
+            background-color: $black;
+        }
+    }
+}
+
+@media screen and (max-width: 1279px){
+    .stories{
+        &__item{
+            padding: 0 20px;
+
+            p{
+                font-size: 24px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0em;
+
+            }
+        }
+    }
+}
