@@ -1,6 +1,5 @@
 console.log("%c BLOCK PORTFOLIO is onloaded", "color: purple; font-size: 20px;");
 
-
 let vw = document.documentElement.clientWidth / 100;
 console.log(vw)
 

@@ -1,0 +1,123 @@
+
+.something{
+    &__header{
+        position: relative;
+        width: 100%;
+        margin: 117px 0 150px;
+        padding-top: 10px;
+        padding-bottom: 40px; 
+        
+        &::after{
+            content:"";
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            top: 0;
+            right: 0;
+            background-color: $brown;
+
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $brown;
+        }
+
+        h1{
+            margin-left: 50%;
+            transform: translateX(-40%);
+
+            color: $brown;
+            font-size: 100px;
+            font-weight: 600;
+            line-height: 114px;
+            letter-spacing: .04em;
+
+        }
+        h2{
+            margin-left: 50%;
+            transform: translateX(-10%);
+
+            font-family: Paris;
+            font-size: 90px;
+            font-weight: 400;
+            line-height: 90px;
+            text-align: left;
+
+        }
+        h4{
+            margin-top: 20px;
+            margin-left: 50%;
+            transform: translateX(-10%);
+
+            text-transform: uppercase;
+
+        }
+    }
+
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 200px;
+
+        &-link{
+            width: 45%;
+            text-align: center;
+
+            h4{
+                color: $brown;
+            }
+            p{
+                height: 300px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1279px){
+    .something{
+        &__header{
+            margin-bottom: 20px;
+
+            h1, h2, h4{
+                margin-left: auto;
+                text-align: right;
+                transform: translateX(0);
+            }
+
+            h1{
+                font-size: 60px;
+                line-height: 70px;
+            }
+            h2{
+                font-size: 45px;
+                line-height: 55px;
+            }
+        }
+
+        &__links{
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 465px;
+            margin-left: auto;
+            margin-right: auto;
+
+            &-link{
+                width: 100%;
+                margin-top: 100px;
+
+                p{
+                    height: auto;
+                }
+                
+            }
+        }
+        
+    }
+    
+}
