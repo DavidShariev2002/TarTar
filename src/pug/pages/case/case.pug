@@ -1,0 +1,32 @@
+extends ../base/layout.pug
+
+block head 
+    title TarTar Blog 
+
+block content 
+    +top_image("/assets/img/packages_page_header.png")
+    +menu(3)
+
+    .case.container
+        p.text-italic.case__top-ath Articles, Tips and Tricks 
+        .case__author 
+            .case__author-img 
+                img(src=require("/assets/img/avatar.png"), alt="")
+            .case__author-text 
+                h4 Paul Tarabozzo
+                span.small-text Dec 30, 2020 
+        h3.case__title 9 TIPS FOR WEDDING PHOTOGRAPHERS 
+        p.case__subtitle Hello people! Paul Tarabozzo here! Today I want to share my 9 tips for wedding photographers to make your life easier, attract more clients, and make them excited to work with you.
+        img(src=require("/assets/img/case_1.png")).case__head-img 
+        
+        p
+            strong #1 – Ask more questions.
+            span People who found you on the internet or through referrals most likely saw your photos and liked them if they decided to call you, so now it’s the time for them to like you personally. It is very important because for them it is an important day and they want to spend it with a photographer that is easy going, can cheer them up and fully understand what they’re looking for. Ask what they expect from a wedding photographer, what kind of pictures they like to have, what kind of guests they’re inviting. Show them that you care about their wedding more than about your own photography. When you have all info about your client and established a connection you can explain some aspects of your work based on their expectations. Usually, it leads to better cooperation from the clients and more bookings. 
+            
+        p
+            strong #2 – Guide your clients
+            span If you’re a wedding photographer – most likely you’ve been to more weddings than your clients will ever visit in their whole life. It means that you’ve seen more, experienced more, and have an idea of what can go wrong on the wedding day or what can help them to save time and make the day much easier. For example, I usually start a day from the detail shots and ask brides to have the dress, necklace, earrings, shoes, invitations, and all rings to be at their getting ready location ready to shoot. Ask your bride to put all these items somewhere so you can start from them and then proceed to the rest of the coverage, otherwise, most likely you won’t have another opportunity to shoot all the details during the day. Such advice will show that you know what you’re doing and that you’re in charge and your clients don’t need to worry and can relax. It will make them very happy and as a result, they will recommend you to their friends.
+
+        
+
+    include ../../blocks/global/footer/footer.pug

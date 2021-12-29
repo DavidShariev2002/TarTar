@@ -27,7 +27,10 @@ module.exports = {
     entry: {
         main: src.scripts+"/main.js",
         mainpage: src.pages+"/mainpage/mainpage.js",
-        
+        packages: src.pages+"/packages/packages.js",
+        contact: src.pages+"/contact/contact.js",
+        blog: src.pages+"/blog/blog.js",
+        case: src.pages+"/case/case.js"
         
     },
     output: {
@@ -131,6 +134,39 @@ module.exports = {
             minify: !isDev
 
         }),
+        new HtmlWebpackPlugin({
+            template: src.pages + '/packages/packages.pug',
+            filename: './pages/packages.html',
+            title: 'TarTar Packages',
+            chunks: ['main', 'packages'],
+            minify: !isDev
+
+        }),
+        new HtmlWebpackPlugin({
+            template: src.pages + '/contact/contact.pug',
+            filename: './pages/contact.html',
+            title: 'TarTar Contact',
+            chunks: ['main', 'contact'],
+            minify: !isDev
+
+        }),
+        new HtmlWebpackPlugin({
+            template: src.pages + '/blog/blog.pug',
+            filename: './pages/blog.html',
+            title: 'TarTar Our Blog',
+            chunks: ['main', 'blog'],
+            minify: !isDev
+
+        }),
+        new HtmlWebpackPlugin({
+            template: src.pages + '/case/case.pug',
+            filename: './pages/blog_1.html',
+            title: 'TarTar Our Blog',
+            chunks: ['main', 'case'],
+            minify: !isDev
+
+        }),
+
         
 
     ],

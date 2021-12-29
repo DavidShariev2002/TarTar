@@ -1,0 +1,34 @@
+.welcome_text{
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin-bottom: 100px;
+    padding: 0 25px;
+
+    &__title{
+        color: $dark_grey;
+        margin-bottom: 100px;
+    }
+
+    span{
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        color: $dark_grey;
+        padding-bottom: 50px;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+
+        width: calc(100% - 60px);
+        height: 3px;
+        background-color: $brown;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   
+}
