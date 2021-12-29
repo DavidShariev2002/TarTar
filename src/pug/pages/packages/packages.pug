@@ -1,0 +1,12 @@
+extends ../base/layout.pug
+
+block head 
+    title TarTar Packages 
+
+block content 
+    +top_image("/assets/img/packages_page_header.png")
+    +menu(1)
+    include ../../blocks/packages/prices/prices.pug
+    include ../../blocks/packages/services/services.pug
+    include ../../blocks/global/footer/footer.pug
+    

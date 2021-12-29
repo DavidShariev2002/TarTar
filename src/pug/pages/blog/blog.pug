@@ -1,0 +1,55 @@
+extends ../base/layout.pug
+
+block head 
+    title TarTar Contact Us 
+
+include ../../blocks/blog/case/case.pug
+
+block content 
+    +top_image("/assets/img/header_2.png")
+    +menu(2)
+
+    include ../../blocks/blog/welcome_text/welcome_text.pug
+    
+    .blogs.container 
+        +case(
+            "9 TIPS FOR WEDDING PHOTOGRAPHERS ",
+            "30.12.2020 | Articles, Tips and Tricks",
+            "case_1.png",
+            "Hello people! Paul Tarabozzo here! Today I want to share my 9 tips for wedding photographers to make your life easier, attract more clients, and make them excited to work with you. #1 – Ask more questions. People who found you on the internet or through referrals most likely..."
+        )
+        +case(
+            "ONE SOURCE OF LIGHT DOES IT ALL!",
+            "22.12.2020 | Tips and Tricks",
+            "case_2.png",
+            "Hello people! Tarabozzo here! I want to show you how using just one source of light you can create different kinds of photos, so you can understand that it’s not about the number of light sources, but more about how you use them. Having just one source you can do a lot and it is... "
+        )
+        +case(
+            "PORTRAIT PHOTOGRAPHY TUTORIAL FOR BEGINNERS | LIGHT & COMPOSITION STRAIGHT FROM THE CAMERA | POV",
+            "06.12.2020 | Tips and Tricks",
+            "case_3.png",
+            "Hello people! Paul Tarabozzo here! Today I want to introduce you to a new series of videos where I will be showing my process of shooting various photos with an explanation, sharing my tips. Having over 10 years of full-time professional photography I believe that my tips and tricks will be useful to any photographer..."
+        )
+        +case(
+            "HOW TO SHOOT SELF PORTRAITS",
+            "30.12.2020 | Articles, Tips and Tricks",
+            "case_4.png",
+            "Hello people! Paul Tarabozzo here! Today I want to introduce you to a new series of videos where I will be showing my process of shooting various photos with an explanation, sharing my tips. Having over 10 years of full-time professional photography I believe that my tips and tricks will be useful to any photographer..."
+        )
+        +case(
+            "HOW TO BECOME A PROFESSIONAL PHOTOGRAPHER: 5 KEY POINTS",
+            "13.11.2020 | Articles",
+            "case_5.png",
+            "Hello people! Paul Tarabozzo here! Today I want to introduce you to a new series of videos where I will be showing my process of shooting various photos with an explanation, sharing my tips. Having over 10 years of full-time professional photography I believe that my tips and tricks will be useful to any photographer..."
+        )
+        +case(
+            "WHAT WEDDING PHOTOGRAPHER SHOULD NOT DO ON A WEDDING",
+            "30.04.2020 | Tips and Tricks",
+            "case_6.png",
+            "Hello guys, this is Paul from Tara Weddings and today I want to speak about the things that wedding photographer should not do on weddings. As you can understand, and as you know, the main reason why people ask you to be on a wedding is because of your photos. So this is your main..."
+        )
+ 
+
+        
+
+    include ../../blocks/global/footer/footer.pug

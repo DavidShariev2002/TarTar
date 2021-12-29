@@ -1,0 +1,8 @@
+mixin case(title, subtitle, img_url, text, link="/pages/blog_1.html")
+    .case(img_url=img_url)
+        .case__title.contact=title
+        .case__subtitle.small-text.italic-text=subtitle
+        .case__img 
+        p.case__text=text
+        a.contact(href=link) READ MORE
+            

@@ -1,0 +1,12 @@
+extends ../base/layout.pug
+
+block head 
+    title TarTar Contact Us 
+
+block content 
+    +top_image("/assets/img/packages_page_header.png")
+    +menu(3)
+
+    include ../../blocks/contact/callform/callform.pug
+
+    include ../../blocks/global/footer/footer.pug

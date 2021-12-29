@@ -1,0 +1,274 @@
+.prices{
+    padding-top: 40px;
+    &__header{
+        text-align: center;
+
+        h3{
+            color: $dark_grey;
+        }
+        span{
+            display: inline-block;
+            padding-top: 10px;
+            color: $brown;
+        }
+        p{
+            max-width: 800px;
+            margin: 20px auto;
+        }
+    }
+
+    &__slider-container{
+        position: relative;
+        padding: 80px 60px;
+    }
+
+    &__slider{
+
+        &-arrow{
+            position: absolute;
+            cursor: pointer;
+
+            top: 50%;
+
+            &--left{
+                left: 0;
+            }
+            &--right{
+                right: 0;
+            }
+        }
+
+        .slick-track{
+            display: flex !important;
+        }
+        .slick-slide{
+            height: inherit !important;
+
+        }
+
+        .slick-active{
+            border-left: 2px solid $brown;
+        }
+
+        &-item{
+            text-align: center;
+            padding: 0 20px;
+
+            h3{
+                position: relative;
+                margin-bottom: 50px;
+                padding-top: 20px;
+                color: $dark_grey;
+
+                span{
+                    display: inline-block;
+                    position: absolute;
+
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    color: $brown;
+                    font-family: Avenir;
+                    font-size: 20px;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: 27px;
+                    text-align: center;
+
+
+                }
+            }
+
+            &-list{
+                font-family: Baskerville;
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 38px;
+                letter-spacing: 0em;
+                text-align: center;
+
+                padding-bottom: 50px;
+
+                color: $dark_grey;
+
+                .unactive{
+                    color: $grey;
+                }
+
+                
+            }
+
+            &-oldprice{
+                position: relative;
+                width: auto;
+                display: inline-block;
+                margin: 0 auto;
+                color: grey;
+
+                font-family: Paris;
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 50px;
+                text-align: center;
+
+                padding-bottom: 20px;
+                
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 120%;
+                    top: 60%;
+                    border-top: 2px solid $brown;
+                    transform: rotate(-20deg);
+                }
+            }
+
+            &-price{
+                font-family: Paris;
+                font-size: 70px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 70px;
+                letter-spacing: -0.025em;
+                text-align: center;
+
+                color: $brown;
+
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .prices__footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        &-special{
+            position: relative;
+            padding: 50px 0 50px 0px;
+            margin-right: 60px;
+            border: 1px solid $grey;
+
+            &::before{
+                content:"*";
+                position: absolute;
+                left: -10px;
+                top: -10px;
+                font-size: 36px;
+                line-height: 30px;
+                padding: 13px 30px;
+                color: $grey;
+                background-color: $white;
+            }
+
+            h4{
+
+                position: relative;
+                left: 50px;
+
+                font-family: Avenir;
+                font-size: 37px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 51px;
+                letter-spacing: 0.01em;
+                text-align: left;
+
+
+                color: $brown;
+            }
+            span{
+                position: relative;
+                left: 50px;
+
+                font-family: Avenir;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: -0.07em;
+                text-align: left;
+
+                color: $dark_grey;
+            }
+        }
+
+        &-customize{
+
+            p{
+                max-width: 450px;
+                margin: 0 auto;
+                padding: 50px 0;
+            }
+
+            &-btns{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            button{
+                padding-left: 0;
+                padding-right: 0;
+                border-radius: 4px;
+                width: 305px;
+
+                margin-right: 50px;
+            }
+        }
+
+    }
+
+    
+}
+
+@media screen and (max-width: 1279px){
+    .prices{
+        &__footer{
+            margin-bottom: 100px;
+            display: block!important; 
+
+            &-customize{
+                width: 100%;
+                padding: 0 20px;
+                margin: 0 auto;
+
+                &-btns{
+                    max-width: 800px;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+
+                    a{  
+                        width: 100%;
+                        margin-bottom: 20px;
+                        text-align: center;
+
+                        button{
+                            display: inline-block;
+                            margin-right: 0!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .prices{
+        &__slider{
+
+            .slick-active{
+                border-left: 2px solid $white;
+            }
+            &-item{
+            }
+        }
+
+        
+
+    }
+}
